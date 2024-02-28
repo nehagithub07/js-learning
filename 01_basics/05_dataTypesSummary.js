@@ -5,8 +5,6 @@
 
 const score = 100
 const scoreValue = 100.3
-
-const isLoggedIn = false
 const outSideTemp = null
 let userEmail;
 
@@ -38,3 +36,35 @@ const myFunction = function() {
 
 console.log(typeof heros); // object
 console.log(typeof myFunction);  // function
+
+
+
+// ****************************************************************
+
+// Stack (jitne bhi Primitive type hote hai waha stack use hoti hai) {declared variable ka copy milta hai}, Heap (Non - primitive m heap use hoti hai) {Heap me refrence aata hai}
+
+
+//--------- example of stack ---------
+let myName = "Neha"
+let anotherName = myName
+anotherName = "Saniya"
+
+console.log(myName);
+console.log(anotherName);
+
+//--------------------------------------
+
+//--------- example of head ------------
+
+let userOne = { 
+    email : "user@gmail.com",
+    upi : "user@ybl"
+}
+
+let userTwo = userOne
+userTwo.email = "userTwo@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+//---------------------------------------
