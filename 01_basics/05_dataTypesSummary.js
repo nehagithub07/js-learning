@@ -54,7 +54,7 @@ console.log(anotherName);
 
 //--------------------------------------
 
-//--------- example of head ------------
+//--------- example of heap ------------
 
 let userOne = { 
     email : "user@gmail.com",
