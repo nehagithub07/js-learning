@@ -9,5 +9,25 @@ let myDate = new Date()
 // console.log(typeof myDate);  // object
 
 // let myCreatedDate = new Date(2023, 0, 23)  // months jo hai 0 se start hote hai js k andr
-let myCreatedDate = new Date(2023, 0, 23, 5, 3)
-console.log(myCreatedDate.toDateString());
+// let myCreatedDate = new Date(2023, 0, 23, 5, 3)
+// console.log(myCreatedDate.toDateString());
+let myCreatedDate = new Date("01-14-2 023")
+// console.log(myCreatedDate.toLocaleString());
+
+let myTimeStamp = Date.now() 
+// console.log(myTimeStamp);
+// console.log(myCreatedDate.getTime());
+
+console.log(Math.floor(Date.now()/1000)); // convert into sec
+
+let newDate = new Date()
+console.log(newDate);
+console.log(newDate.getMonth() + 1);
+console.log(newDate.getDay());
+
+// `${newDate.getDay()} and the time`  // string interpolation
+
+newDate.toLocaleString('default', {
+    weekday: "long"
+    //timeZone: ''
+})
