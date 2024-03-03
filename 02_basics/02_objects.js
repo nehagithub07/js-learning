@@ -104,8 +104,38 @@ const users = [
 // console.log(users[1].email);
 
 // console.log(tinderUser);
-console.log(Object.keys(tinderUser));  // output value ka datatype array hoga
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));  // array k andr array dikhaega
+// console.log(Object.keys(tinderUser));  // output value ka datatype array hoga
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));  // array k andr array dikhaega
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn')); // ye btaega ki key exists krti hai ya nhi
+// console.log(tinderUser.hasOwnProperty('isLoggedIn')); // ye btaega ki key exists krti hai ya nhi
+
+
+
+// --------------------- DeStructuring of objects -----------------
+
+const course = {
+    courseName: "js in Hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+// course.courseInstructor
+// const {courseInstructor} = course  // jahha bhi hum dekhenge {____} ese to iska mtlb de-structuring ki ja rahi hai
+const {courseInstructor: instructor} = course  // agr hume lgta hai ki courseIntructor bhot bda naam hai to hum usko dusra naam bhi de skte hai
+console.log(courseInstructor);
+console.log(instructor);
+
+// API se hmare pass value JSON format m aati hai phele k time mai XMl format m aaya krti thi
+// how to create JSON format or object keys or value dono string ki form mai hoti hai
+// {
+//     "name": "Neha",
+//     "courseName": "js in hindi",
+//     "price": "free"
+// }
+
+// kahi baar hume APIs array k andr object k format m bhi milti hai
+[
+    {},
+    {},
+    {}
+]
